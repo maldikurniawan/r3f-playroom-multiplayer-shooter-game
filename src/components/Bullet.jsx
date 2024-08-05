@@ -17,7 +17,7 @@ export const Bullet = ({ player, angle, position, onHit }) => {
   const rigidbody = useRef();
 
   useEffect(() => {
-    const audio = new Audio("/audios/rifle.mp3");
+    const audio = new Audio("./audios/rifle.mp3");
     audio.play();
     const velocity = {
       x: Math.sin(angle) * BULLET_SPEED,

@@ -51,7 +51,7 @@ export const CharacterController = ({
 
   useEffect(() => {
     if (state.state.dead) {
-      const audio = new Audio("/audios/dead.mp3");
+      const audio = new Audio("./audios/dead.mp3");
       audio.volume = 0.5;
       audio.play();
     }
@@ -59,7 +59,7 @@ export const CharacterController = ({
 
   useEffect(() => {
     if (state.state.health < 100) {
-      const audio = new Audio("/audios/hurt.mp3");
+      const audio = new Audio("./audios/hurt.mp3");
       audio.volume = 0.4;
       audio.play();
     }
